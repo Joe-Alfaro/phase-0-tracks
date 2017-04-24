@@ -10,3 +10,5 @@ Creating branches can allow you to work on features without changing the main br
  A commit is adding a change to file and making it a save point. A good commit message includes exactly what difference was made.
 * What is a merge conflict?
 When two branches change the same line in different ways and both are merged.
+
+* For Release 2
