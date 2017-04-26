@@ -13,3 +13,5 @@ Creating branches can allow you to work on features without changing the main br
 
 * What is a merge conflict?
 When two branches change the same line in different ways and both are merged.
+
+* For Release 2
