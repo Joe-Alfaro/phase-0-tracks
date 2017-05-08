@@ -1,16 +1,18 @@
 body{
-  width: 960px;
+  max-width: 960px;
+  min-width: 150px;
 }
 #external-links{
   float: left;
   display: inline-block;
   vertical-align: top;
-  width: 200px;
+  width: 20%;
+  margin-right: 35px;
 }
 main{
   display: inline-block;
   vertical-align: top;
-  width: 756px;
+  width: 70%;
 }
 blockquote {
   border-left: 5px solid blue;
