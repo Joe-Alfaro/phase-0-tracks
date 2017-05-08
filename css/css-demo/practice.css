@@ -10,3 +10,10 @@
 .list{
   font-size: .8em;
 }
+ul > li {
+  font-style: italic;
+}
+a:link { color: blue }
+a:visited { color: purple }
+a:hover { font-weight: bold }
+a:active { color: lime }
