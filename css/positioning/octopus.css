@@ -1,0 +1,22 @@
+.container{
+  position: relative;
+}
+.octopus{
+  position: absolute;
+  left: 150px;
+  top: 100px;
+  z-index: 0;
+}
+
+.glasses{
+  position: absolute;
+  top: 198px;
+  left: 192px;
+  z-index: 1;
+}
+.hat{
+  position: absolute;
+  top: 25px;
+  left: 125px;
+  z-index: 2;
+}
