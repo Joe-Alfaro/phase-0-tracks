@@ -1,0 +1,14 @@
+ELEVATOR ROBOT
+Ask which floor to go to
+Match response with corresponding floor
+Locate button for requested floor
+Push button
+
+PUT ON PANTS
+Sort available pant options
+Assign value for classiness and warmth
+Take input such as weather and event
+Match pants to input
+Remove pants from drawer
+Check for underwear on
+If no underwear go to underwear algorithm
