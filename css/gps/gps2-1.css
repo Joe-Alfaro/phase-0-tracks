@@ -1,0 +1,38 @@
+header{
+  background-color: red;
+  color: white;
+  height: 250px;
+}
+body{
+  font-family: helvetica;
+}
+header > h1{
+  background-color: blue;
+  width: 21%;
+  padding: 20px;
+  -webkit-margin-before: 20px;
+}
+.column-1{
+  background-color: black;
+  color: silver;
+  float: left;
+  width: 45%;
+  padding: 5px;
+  padding-left: 25px;
+}
+.column-2{
+  background-color: green;
+  color: yellow;
+  float: right;
+  width: 45%;
+  padding: 5px;
+  padding-right: 25px;
+}
+.column-1, .column-2{
+  display: inline-block;
+  vertical-align: top;
+  height: 1100px;
+}
+footer{
+  clear: both;
+}
