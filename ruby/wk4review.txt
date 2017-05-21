@@ -1,0 +1,66 @@
+Variables
+1. What is a variable? Why might a programmer use a variable?
+A variable stores data under a given name
+
+2. If the value of first_name is "Abraham" and last_name is "Lincoln", explain the order in which Ruby will run the line full_name = first_name + last_name, and what the final result will be.
+Ruby will save the two strings to the string full_name. full_name will equal AbrahamLincoln.
+
+Data Types
+3. For each of the following data types, write a short definition and give at least one example of when you might use the data type in a program. (Don't use an example we've already provided.)
+
+string
+	A string is characters saved in order. e.g. “123” “ABC”
+integer
+	An integer is a whole humber. e.g. 1 2 3 4
+float
+	A float is a decimal. e.g. 1.0 2.1 3.4
+nil
+	nil is the equivalent to nothing.
+boolean
+	A boolean is a true or false.
+
+Algorithms
+4. What is an algorithm?
+An algorithm is the way that something is accomplished. The steps to solving a problem.
+
+5. What are two common categories of algorithm in computer science? 
+
+
+Methods
+6. What is a method? Why might a programmer choose to use a method?
+A method is a saved algorithm that you can pass variables through. They are helpful when the same thing has to happen to different variables multiple times.
+
+7. Define the following terms as they relate to a method. 
+
+return value
+	What the method’s value is. Can be implicit or explicit.
+side effect
+	What the method might do, such as puts
+parameter
+	A condition for the method
+argument
+	A variable that can be passed into a method
+implicit return
+	The value of the last line of a method
+
+8. What are global scope and method scope? How do those scopes impact the availability of data at different points in a program?
+A global scope is a variable that is accessible throughout the program. Method scopes are variable only accessible in the method.
+
+Control Flow
+9. What is control flow? Why might a programmer choose to use flow control?
+When there are options depending on the input. The output may change.
+
+10. Define the following terms as they relate to flow control.
+
+loop
+	something is done repeatedly until a parameter is met.
+if
+	if the parameter is met then this thing is done
+else
+	if no if or elsif parameters are met this thing is done
+elsif
+	if the if and elsif parameters are not met and this parameter is then this thing 	is done.
+while
+	Continually do the thing until the parameter is met
+until
+	Same as while, not sure the difference.
