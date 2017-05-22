@@ -19,3 +19,24 @@ end
 arr = [42, 89, 23, 1]
 p search_array(arr, 1)
 p search_array(arr, 24)
+
+def fib(number)
+  array = [0, 1]
+  index = 1
+  if number < 3
+    return array
+  else
+    while index < number - 1
+      array.push(array[index]+array[index-1])
+      index += 1
+    end
+  end
+  return array
+end
+
+p fib(6)
+if fib(100).last == 218922995834555169026
+  puts "nailed it"
+else
+  puts "nope"
+end
