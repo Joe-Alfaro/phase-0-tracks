@@ -40,3 +40,29 @@ if fib(100).last == 218922995834555169026
 else
   puts "nope"
 end
+
+#Sorting method - would have a variable called smallest. would loop through and compare smallest to every index and when the index was smaller than the smallest would be replaced by index. after going through all the indexes would put smallest into a new array and delete it from the old array and loop through again.
+
+def sort_integers(unordered)
+  ordered = []
+  while unordered.length > 0
+    index = 0
+    smallest_index = 0
+    smallest_num = unordered[0]
+    while index < (unordered.length-1)
+      if (smallest_num <= unordered[index+1])
+        index = index+1
+      else
+        smallest_num = unordered[index+1]
+        smallest_index = index+1
+        index = index +1
+      end
+    end
+    ordered.push(smallest_num)
+    unordered.delete_at(smallest_index)
+  end
+  return ordered
+end
+
+array = [0, 4, 565, 89, 17, 25, 40, 24]
+puts "#{array} ---> #{sort_integers (array)}"
