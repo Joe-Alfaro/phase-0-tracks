@@ -31,3 +31,24 @@ spot.roll_over
 p spot.dog_years(12)
 spot.pee_itself
 
+class Kitten
+  def scratch
+    puts "Ouch! He scratched me."
+  end
+  def sleep
+    puts "Oh look, he's sleeping."
+  end
+end
+
+counter = 0
+cat_array = []
+while counter < 50
+  name = counter
+  cat_array << name = Kitten.new
+  counter = counter + 1
+end
+p cat_array
+cat_array.each do |x|
+  x.scratch
+  x.sleep
+end
