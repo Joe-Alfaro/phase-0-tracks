@@ -26,6 +26,10 @@ class Dancer
     p "Now dancing with #{@dance_card.delete_at(0)}."
   end
 
+  def leap
+    p "*leaps*"
+  end
+
   def name
     @name
   end
