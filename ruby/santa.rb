@@ -18,18 +18,8 @@ class Santa
     puts "Reindeer: #{@reindeer_ranking.join(' ')}"
     puts "Age: #{@age}"
   end
-  def gender
-    @gender
-  end
-  def ethnicity
-    @ethnicity
-  end
-  def age
-    @age
-  end
-  def gender=(new_gender)
-    @gender = new_gender
-  end
+  attr_reader :ethnicity
+  attr_accessor :age, :gender
   def celebrate_birthday
     @age += 1
   end
@@ -58,23 +48,14 @@ def print_nice(array)
   return array
 end
 
-santas = []
+santa = []
 example_genders = ['Prefer not to state', 'Male', 'Female']
 example_ethnicities = ['Prefer not to state', 'Latino', 'White', 'Black', 'Asian']
 
-#driver code
 counter = 0
-while counter < 1
-  santas << Santa.new(example_genders[rand(example_genders.length)], example_ethnicities[rand(example_ethnicities.length)])
+while counter < 100
+  santa = Santa.new(example_genders[rand(example_genders.length)], example_ethnicities[rand(example_ethnicities.length)])
+  santa.age = rand(140)
+  santa.about
   counter +=1
 end
-
-print_nice(santas)
-puts "age santa..."
-santas[0].celebrate_birthday
-print_nice(santas)
-puts "bad reindeer..."
-santas[0].get_mad_at("Dasher")
-print_nice(santas)
-santas[0].gender = "Test"
-print_nice(santas)
