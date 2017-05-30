@@ -1,0 +1,5 @@
+take string for word or phrase and downcase
+Have an array of alphabet
+change word or phrase to array with .separate
+Iterate through word or phase and compare to alphabet. If equal bring ‘_’, else just print
+have array of guesses. Compare array of guesses length to length of word of phrase
