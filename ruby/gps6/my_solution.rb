@@ -20,14 +20,14 @@ class VirusPredictor
 
 # Runs two other methods.
   def virus_effects
-    predicted_deaths(@population_density, @population, @state)
-    speed_of_spread(@population_density, @state)
+    predicted_deaths
+    speed_of_spread
   end
 
   private
 
 # Takes three arguments and uses one to compare to integers in an if statement. uses other for calculation of new variable. and uses third for a name in the string.
-  def predicted_deaths(population_density, population, state)
+  def predicted_deaths
     # predicted deaths is solely based on population density
     if @population_density >= 200
       number_of_deaths = (@population * 0.4).floor
@@ -45,7 +45,8 @@ class VirusPredictor
   end
 
 # Takes two arguments uses first in if statement to calculate new variable. uses second as name in string.
-  def speed_of_spread(population_density, state) #in months
+  def speed_of_spread
+   #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
     speed = 0.0
