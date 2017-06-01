@@ -11,12 +11,14 @@ require_relative 'state_data'
 
 class VirusPredictor
 
+# The initialize method takes three arguments and puts them into instance attributes. Is run every time a new instance is created.
   def initialize(state_of_origin, population_density, population)
     @state = state_of_origin
     @population = population
     @population_density = population_density
   end
 
+# Runs two other methods.
   def virus_effects
     predicted_deaths(@population_density, @population, @state)
     speed_of_spread(@population_density, @state)
@@ -24,6 +26,7 @@ class VirusPredictor
 
   private
 
+# Takes three arguments and uses one to compare to integers in an if statement. uses other for calculation of new variable. and uses third for a name in the string.
   def predicted_deaths(population_density, population, state)
     # predicted deaths is solely based on population density
     if @population_density >= 200
@@ -39,9 +42,9 @@ class VirusPredictor
     end
 
     print "#{@state} will lose #{number_of_deaths} people in this outbreak"
-
   end
 
+# Takes two arguments uses first in if statement to calculate new variable. uses second as name in string.
   def speed_of_spread(population_density, state) #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
