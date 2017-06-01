@@ -18,10 +18,11 @@ class VirusPredictor
     @population_density = population_density
   end
 
+#  private
+
 # Runs two other methods.
   def virus_effects
-    predicted_deaths
-    speed_of_spread
+    puts "#{@state} will lose #{predicted_deaths} people in this outbreak and will spread across the state in #{speed_of_spread} months.\n\n"
   end
 
   private
@@ -40,8 +41,6 @@ class VirusPredictor
     else
       number_of_deaths = (@population * 0.05).floor
     end
-
-    print "#{@state} will lose #{number_of_deaths} people in this outbreak"
   end
 
 # Takes two arguments uses first in if statement to calculate new variable. uses second as name in string.
@@ -62,9 +61,6 @@ class VirusPredictor
     else
       speed += 2.5
     end
-
-    puts " and will spread across the state in #{speed} months.\n\n"
-
   end
 
 end
@@ -90,7 +86,7 @@ alaska.virus_effects
 # iterate through the hash
 STATE_DATA.each do |state, value|
   state = VirusPredictor.new(state, value[:population_density], value[:population])
-  state.virus_effects
+  state.print_method
 end
 
 
