@@ -4,8 +4,9 @@
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
-#
-#
+# require_relative is the same as copy and pasting code from a file in the same directory.
+# require vs require_relative require is used when a path to the file is started outside of the current directory
+
 require_relative 'state_data'
 
 class VirusPredictor
